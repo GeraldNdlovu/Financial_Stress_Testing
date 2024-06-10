@@ -1,4 +1,4 @@
-# 🚀 **Gold backed Stablecoin's Stress Testing Kit** 🚀
+# 🚀 **Asset Backed Stablecoin's Stress Testing Kit \u2122** 🚀
 
 ## 🎯 **Objective**
 
