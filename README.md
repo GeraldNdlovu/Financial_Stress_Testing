@@ -1,4 +1,4 @@
-# 🚀 **Stablecoin Stress Testing Model** 🚀
+# 🚀 **Gold backed Stablecoin's Stress Testing Model** 🚀
 
 ## 🎯 **Objective**
 
