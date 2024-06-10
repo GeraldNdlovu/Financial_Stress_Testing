@@ -1,4 +1,4 @@
-# 🚀 **Gram Stablecoin Stress Test** 🚀
+# 🚀 **Stablecoin Stress Testing Model** 🚀
 
 ## 🎯 **Objective**
 
