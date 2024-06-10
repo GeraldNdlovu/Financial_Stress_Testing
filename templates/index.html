@@ -1,19 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Stress Testing Kit</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold-Backed Stablecoin Stress Testing</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Stress Testing</h1>
-        <form method="post">
-            <button type="submit">Run Stress Test</button>
-        </form>
-        {% if plot_url %}
-            <h2>Stress Test Results</h2>
-            <img src="{{ url_for('static', filename='plot.png') }}" alt="Gold Price Plot">
-        {% endif %}
-    </div>
+    <h1>Gold-Backed Stablecoin Stress Testing</h1>
+    <p>This is a placeholder for the user interface.</p>
 </body>
 </html>
