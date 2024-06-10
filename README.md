@@ -1,7 +1,7 @@
 **Project Idea: Stress Test for Gram Stablecoin**
 
 **Goal:**
-I aim to work on the Gram project, mainly focusing on financial stress testing. This will help us understand how changes in gold prices affect the stablecoin. This study will give us a better understanding of Gram's stability and ability to adapt to different market situations.
+We aim to work on the Gram project, mainly focusing on financial stress testing. This will help us understand how changes in gold prices affect the stablecoin. This study will give us a better understanding of Gram's stability and ability to adapt to different market situations.
 
 **About Gram:**
 Gram is an innovative stablecoin project that aims to create a digital currency tied to the value of gold. This provides stability and trust in the digital finance world. The project is led by a dedicated team that values community governance, security, and user involvement.
