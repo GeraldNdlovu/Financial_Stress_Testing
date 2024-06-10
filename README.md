@@ -59,31 +59,6 @@ Reaffirming the dedication to financial stability and explaining how microservic
 - Kubernetes
 - Git
 
-### Installation
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/GeraldNdlovu/Financial_Stress_Testing_Model_for_Gold-backed_Stable_Coins.git
-   cd Financial_Stress_Testing_Model_for_Gold-backed_Stable_Coins
-   ```
-
-2. **Build Docker images:**
-   ```sh
-   docker-compose build
-   ```
-
-3. **Deploy with Kubernetes:**
-   ```sh
-   kubectl apply -f k8s-deployment.yaml
-   ```
-
-### Usage
-1. **Start the services:**
-   ```sh
-   docker-compose up
-   ```
-
-2. **Access the User Interaction Service:**
-   Navigate to `http://localhost:your-port` to access the UI.
 
 ## Contributing
 We welcome contributions! Please read our [contributing guidelines](CONTRIBUTING.md) for more details.
