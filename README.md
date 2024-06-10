@@ -23,3 +23,12 @@ The stress testing part of the project involves studying different gold price ch
 
 **Why Working Together is Beneficial:**
 - Improved Stability: Stress testing will give us a better understanding of Gram's stability, which will increase user confidence and
+
+Installation / Usage
+Windows/Unix Set-Up Requirements
+Python 3.1x
+8GB free-RAM 
+100+GB SSD
+Necessary Binaries :
+pip install pandas numpy matplotlib scikit-learn
+
