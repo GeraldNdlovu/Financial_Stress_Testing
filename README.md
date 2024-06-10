@@ -1,5 +1,3 @@
-
-```markdown
 # Financial Stability with Microservices: A Gold-Backed Stablecoin Approach
 
 ## Introduction
