@@ -59,6 +59,7 @@ Reaffirming the dedication to financial stability and explaining how microservic
 - Kubernetes
 - Git
 
+https://copilot.microsoft.com/images/create/3d-graphical-art-of-microservices-redefining-the-f/1-66677980b02649c09e1e0493ea7289a3?id=q9IVw2ARgP9XykXMM6fBaQ%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thid=OIG2.onl4mt.wQ9WEAzTRfu1G&form=SYDBIC
 
 ## Contributing
 We welcome contributions! Please read our [contributing guidelines](CONTRIBUTING.md) for more details.
