@@ -1,29 +1,53 @@
 import os
-import requests
+import zipfile
+import pandas as pd
 from kaggle.api.kaggle_api_extended import KaggleApi
 
 # Function to collect historical gold price data
-def collect_data():
+def collect_data(kaggle_username, kaggle_api_key):
     try:
-        # Authenticate with Kaggle (replace 'username' and 'key' with your Kaggle username and API key)
+        # Authenticate with Kaggle
         api = KaggleApi()
-        api.authenticate(username='your_kaggle_username', key='your_kaggle_api_key')
+        api.authenticate(username=kaggle_username, key=kaggle_api_key)
 
         # Search for the dataset containing historical gold price data
-        dataset = api.dataset_list(search='gold price')
+        datasets = api.dataset_list(search='gold price')
 
-        # Assuming the first dataset found is the one we want, download it
-        dataset_id = dataset[0].ref
-        api.dataset_download_files(dataset_id)
+        # Verify and select the desired dataset
+        for dataset in datasets:
+            if 'gold' in dataset.title.lower() and 'price' in dataset.title.lower():
+                dataset_id = dataset.ref
+                break
+        else:
+            print("Error: Dataset containing historical gold price data not found.")
+            return None
 
-        # Extract the downloaded files
-        os.system('unzip *.zip')
+        # Download dataset files
+        api.dataset_download_files(dataset_id, path='./gold_price_data', unzip=True)
 
-        # Read the CSV file containing the data
-        data = pd.read_csv('filename.csv')  # Replace 'filename.csv' with the actual filename
+        # Find the CSV file
+        csv_file = [file for file in os.listdir('./gold_price_data') if file.endswith('.csv')]
+        if not csv_file:
+            print("Error: CSV file containing historical gold price data not found.")
+            return None
+        csv_file_path = os.path.join('./gold_price_data', csv_file[0])
+
+        # Read the CSV file
+        data = pd.read_csv(csv_file_path)
+
+        # Cleanup: Delete downloaded files
+        os.remove(csv_file_path)
+        os.rmdir('./gold_price_data')
 
         return data
     except Exception as e:
         print(f"Error fetching data: {e}")
         return None
 
+# Example usage
+kaggle_username = 'your_kaggle_username'
+kaggle_api_key = 'your_kaggle_api_key'
+data = collect_data(kaggle_username, kaggle_api_key)
+if data is not None:
+    print("Data fetched successfully.")
+    print(data.head())
