@@ -1,20 +1,18 @@
-from flask import Flask, render_template, request
-import pandas as pd
-import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
-import matplotlib.pyplot as plt
 import os
+import pandas as pd
+from flask import Flask, render_template, request
 import kaggle
 
 app = Flask(__name__)
 
-# Download dataset from Kaggle
 def download_kaggle_dataset():
     kaggle.api.authenticate()
-    kaggle.api.dataset_download_files('nhiyen/monthly-gold-price', path='data/', unzip=True)
+    dataset_path = 'data/monthly_csv.csv'
+    if not os.path.exists('data'):
+        os.makedirs('data')
+    if not os.path.isfile(dataset_path):
+        kaggle.api.dataset_download_files('nhiyen/monthly-gold-price', path='data/', unzip=True)
 
-# Load and preprocess historical gold price data
 def load_and_preprocess_data():
     download_kaggle_dataset()
     gold_data = pd.read_csv('data/monthly_csv.csv')
@@ -25,7 +23,6 @@ def load_and_preprocess_data():
     gold_data['Volatility'] = gold_data['Daily_Return'].rolling(window=30).std()
     return gold_data
 
-# Train the machine learning model
 def train_model(gold_data):
     X = gold_data[['Volatility']]
     y = gold_data['Price']
@@ -34,7 +31,6 @@ def train_model(gold_data):
     model.fit(X_train, y_train)
     return model, X_test, y_test
 
-# Generate predictions and plot results
 def plot_predictions(model, X_test, y_test):
     predictions = model.predict(X_test)
     plt.figure(figsize=(10, 6))
