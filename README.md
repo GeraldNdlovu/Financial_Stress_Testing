@@ -1,4 +1,25 @@
+
 # Financial Stability with Microservices: A Gold-Backed Stablecoin Approach
+financial_stress_testing/
+|-- data_acquisition/
+|   |-- app.py
+|   |-- Dockerfile
+|-- model_training/
+|   |-- app.py
+|   |-- Dockerfile
+|-- prediction/
+|   |-- app.py
+|   |-- Dockerfile
+|-- analysis/
+|   |-- app.py
+|   |-- Dockerfile
+|-- user_interaction/
+|   |-- app.py
+|   |-- Dockerfile
+|-- docker-compose.yml
+|-- k8s/
+|   |-- deployment.yaml
+|-- setup_ci_cd.sh
 
 ## Table of Contents
 1. Introduction
