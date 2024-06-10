@@ -4,18 +4,6 @@
 This project aims to enhance the financial stability of gold-backed cryptographic stablecoins through a robust microservices architecture. Below is the project structure and a detailed guide on each component's role in achieving this goal.
 
 
-## Table of Contents
-1. [Introduction](#1-introduction)
-2. [Microservices Architecture Overview](#2-microservices-architecture-overview)
-3. [Data Acquisition Service](#3-data-acquisition-service)
-4. [Model Training Service](#4-model-training-service)
-5. [Prediction Service](#5-prediction-service)
-6. [Analysis Service](#6-analysis-service)
-7. [User Interaction Service](#7-user-interaction-service)
-8. [Workflow Execution](#8-workflow-execution)
-9. [Deployment and Management](#9-deployment-and-management)
-10. [Conclusion](#10-conclusion)
-
 ## 1. Introduction
 Emphasizing the critical nature of financial stability within the digital finance realm and highlighting the significance of gold-backed cryptographic stablecoins in ensuring value stability.
 
