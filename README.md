@@ -3,29 +3,6 @@
 
 This project aims to enhance the financial stability of gold-backed cryptographic stablecoins through a robust microservices architecture. Below is the project structure and a detailed guide on each component's role in achieving this goal.
 
-## Project Structure
-```
-financial_stress_testing/
-|-- data_acquisition/
-|   |-- app.py
-|   |-- Dockerfile
-|-- model_training/
-|   |-- app.py
-|   |-- Dockerfile
-|-- prediction/
-|   |-- app.py
-|   |-- Dockerfile
-|-- analysis/
-|   |-- app.py
-|   |-- Dockerfile
-|-- user_interaction/
-|   |-- app.py
-|   |-- Dockerfile
-|-- docker-compose.yml
-|-- k8s/
-|   |-- deployment.yaml
-|-- setup_ci_cd.sh
-```
 
 ## Table of Contents
 1. [Introduction](#1-introduction)
