@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package stress_testing;
+
+service StressTesting {
+    rpc PerformStressTest (StressTestRequest) returns (StressTestResponse) {}
+}
+
+message StressTestRequest {
+    // Add request message fields here
+}
+
+message StressTestResponse {
+    string result = 1;
+}
