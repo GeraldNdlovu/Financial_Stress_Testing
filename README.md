@@ -59,7 +59,7 @@ Reaffirming the dedication to financial stability and explaining how microservic
 - Kubernetes
 - Git
 
-![Project Logo]([https://example.com/logo.png](https://copilot.microsoft.com/images/create/3d-graphical-art-of-microservices-redefining-the-f/1-66677980b02649c09e1e0493ea7289a3?id=q9IVw2ARgP9XykXMM6fBaQ%3d%3d&view=detailv2&idpp=genimg&idpclose=1&thId=OIG2.eDXfzXRZ3Qjc_lbueAHJ&FORM=SYDBIC))
+!(https://copilot.microsoft.com/images/create/3d-graphical-art-of-microservices-redefining-the-f/1-66677980b02649c09e1e0493ea7289a3?id=q9IVw2ARgP9XykXMM6fBaQ%3d%3d&view=detailv2&idpp=genimg&idpclose=1&thId=OIG2.eDXfzXRZ3Qjc_lbueAHJ&FORM=SYDBIC))
 
 
 ## Contributing
