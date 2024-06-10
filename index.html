@@ -3,24 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gram+ Stress Testing Demo</title>
+    <title>Stock Data</title>
 </head>
 <body>
-    <h1>Gram Stablecoin Stress Testing Results</h1>
-    <p>Mean Adjustment: {{ mean_adjustment }}</p>
-    <p>Standard Deviation: {{ std_adjustment }}</p>
-    <p>Minimum Adjustment: {{ min_adjustment }}</p>
-    <p>Maximum Adjustment: {{ max_adjustment }}</p>
-    <button onclick="runSimulation()">Run New Simulation</button>
-    <script>
-        function runSimulation() {
-            fetch('/simulate')
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data);
-                    alert('New simulation run. Check console for details.');
-                });
-        }
-    </script>
+    <h1>Stock Data</h1>
+    {{ data|safe }}
 </body>
 </html>
