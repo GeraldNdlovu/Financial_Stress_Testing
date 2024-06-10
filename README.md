@@ -1,4 +1,4 @@
-```markdown
+
 Financial Stability with Microservices: A Gold-Backed Stablecoin Approach
 
 This project aims to enhance the financial stability of gold-backed cryptographic stablecoins through a robust microservices architecture. Below is the project structure and a detailed guide on each component's role in achieving this goal.
@@ -31,7 +31,6 @@ Presenting a step-by-step workflow from data collection to stakeholder interacti
  9. Deployment and Management
 Discussing the use of Docker and Kubernetes for consistent deployment and management, guaranteeing the reliability and uniformity of the stress testing process.
 
- 10. Conclusion
+10. Conclusion
 Reaffirming the dedication to financial stability and explaining how microservices architecture bolsters rigorous stress testing for gold-backed cryptographic stablecoins.
-```
 
