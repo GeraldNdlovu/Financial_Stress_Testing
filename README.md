@@ -1,4 +1,4 @@
-### Financial Stress Testing with Microservices: A Gold-Backed Stablecoin Approach
+### Financial Stress Testing with Microservices
 
 #### Introduction
 
