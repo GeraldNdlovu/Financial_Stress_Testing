@@ -5,12 +5,19 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 import matplotlib.pyplot as plt
 import os
+import kaggle
 
 app = Flask(__name__)
 
+# Download dataset from Kaggle
+def download_kaggle_dataset():
+    kaggle.api.authenticate()
+    kaggle.api.dataset_download_files('nhiyen/monthly-gold-price', path='data/', unzip=True)
+
 # Load and preprocess historical gold price data
 def load_and_preprocess_data():
-    gold_data = pd.read_csv('gold_price_data.csv')
+    download_kaggle_dataset()
+    gold_data = pd.read_csv('data/monthly_csv.csv')
     gold_data['Date'] = pd.to_datetime(gold_data['Date'])
     gold_data.set_index('Date', inplace=True)
     gold_data['Daily_Return'] = gold_data['Price'].pct_change()
