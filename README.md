@@ -1,4 +1,4 @@
-# 🚀 **Asset Backed Stablecoin's Stress Testing Kit ** 🚀
+# 🚀 **Asset Backed Stablecoin's Stress Testing Kit** 🚀
 
 ## 🎯 **Objective**
 
