@@ -18,7 +18,7 @@ def collect_data_route():
 
 @app.route('/train-models')
 def train_models_route():
-    historical_gold_price_data = collect_data()
+    historical_gold_price_data = collect_data_route()
     machine_learning_model = train_models(historical_gold_price_data)
     return jsonify(machine_learning_model)
 
