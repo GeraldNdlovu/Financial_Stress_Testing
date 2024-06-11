@@ -7,7 +7,7 @@ service StressTesting {
 }
 
 message StressTestRequest {
-    // Add request message fields here
+    // 
 }
 
 message StressTestResponse {
