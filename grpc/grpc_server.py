@@ -8,7 +8,7 @@ class StressTestingServicer(stress_testing_pb2_grpc.StressTestingServicer):
         # Implement your stress testing logic here
         print(f"Received stress test request: {request}")
         
-        # Simulate stress test by printing the request parameters
+        # Example: Simulate stress test by printing the request parameters
         number_of_requests = request.number_of_requests
         duration_seconds = request.duration_seconds
         endpoint = request.endpoint
