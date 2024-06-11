@@ -43,11 +43,3 @@ def collect_data(kaggle_username, kaggle_api_key):
     except Exception as e:
         print(f"Error fetching data: {e}")
         return None
-
-# Example usage
-kaggle_username = 'your_kaggle_username'
-kaggle_api_key = 'your_kaggle_api_key'
-data = collect_data(kaggle_username, kaggle_api_key)
-if data is not None:
-    print("Data fetched successfully.")
-    print(data.head())
