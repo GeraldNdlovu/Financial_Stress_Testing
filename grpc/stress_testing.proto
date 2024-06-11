@@ -7,7 +7,10 @@ service StressTesting {
 }
 
 message StressTestRequest {
-    // 
+    int32 number_of_requests = 1;  // The number of requests to perform
+    int32 duration_seconds = 2;    // The duration of the stress test in seconds
+    string endpoint = 3;           // The endpoint to be tested
+    string payload = 4;            // The payload to be used in the test requests
 }
 
 message StressTestResponse {
